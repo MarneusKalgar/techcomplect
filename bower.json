@@ -14,6 +14,12 @@
   "dependencies": {
     "normalize.css": "*",
     "jquery": "3.*",
-    "mdi": "^1.7.22"
+    "mdi": "^1.7.22",
+    "bootstrap": "^3.3.7",
+    "Tabslet": "^1.7.3",
+    "matchHeight": "matchheight#^0.7.2",
+    "inputmask": "^3.3.8",
+    "jquery.maskedinput": "jquery-maskedinput#^1.4.1",
+    "slick-carousel": "^1.7.1"
   }
 }

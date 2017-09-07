@@ -1,0 +1,86 @@
+.brands {
+  position: relative;
+  display: flex;
+  margin: em(50px) -15px;
+  border: 1px solid $color-border;
+  @include minW(600px) {
+    margin: em(50px) 0;
+  }
+
+
+  &__label {
+    padding: 1em;
+    color: $color-decor-main;
+    background-color: $color-decor-light;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $font-size * 1.25;
+    span {
+      font-size: $font-size * .75;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    box-sizing: border-box;
+    padding: 1.2em 2em;
+    overflow: hidden;
+    @include minW(600px) {
+      padding: 1.2em 14%;
+    }
+  }
+
+  &__item {
+    margin: 0 .7em;
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      outline: none;
+      .brands__img {
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    max-height: em(35px);
+    filter: grayscale(100%);
+  }
+
+  &__btn {
+    @include position(absolute, 0 null null null);
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    svg {
+      width: 1.2em;
+      height: 1.2em;
+      fill: #dadada;
+    }
+    &:hover {
+      svg { fill: $color-decor-main; }
+    }
+
+    &--prev {
+      left: 5.5em;
+      @include minW(600px) {
+        left: 16%;
+      }
+    }
+    &--next {
+      right: .5em;
+      @include minW(600px) {
+        right: 8%;
+      }
+    }
+  }
+}

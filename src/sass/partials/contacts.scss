@@ -1,0 +1,71 @@
+.contacts {
+  color: $color-text;
+
+  &__slider {
+    margin: em(40px) -15px 0;
+    color: $color-light;
+    @include minW(351px) {
+      margin: em(40px) 0 0;
+    }
+  }
+
+  &__slide {
+    display: block;
+    margin-bottom: em(60px);
+    padding: em(40px) 0;
+    background: radial-gradient(ellipse at center, rgba(159,159,159,1) 0%, rgba(159,159,159,1) 41%, rgba(116,116,116,1) 78%, rgba(90,90,90,1) 100%);
+    @include minW(660px) {
+      display: flex;
+    }
+  }
+
+  &__slide-col {
+    box-sizing: border-box;
+    width: em(300px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    &:last-child {
+      margin-top: em(30px);
+    }
+
+    @include minW(660px) {
+      width: 50%;
+      margin: 0;
+      &:first-child {
+        padding-left: 10%;
+      }
+      &:last-child {
+        margin: 0;
+        padding-right: 10%;
+      }
+    }
+  }
+
+  &__label {
+    font-size: $font-size * 3;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    @include minW(660px) {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  &__btn {
+    margin: em(30px) auto 0;
+    @include minW(660px) {
+      margin: em(30px) 0 0;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: em(260px);
+    max-height: em(260px);
+    margin: 0 auto;
+  }
+}

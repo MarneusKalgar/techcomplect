@@ -1,0 +1,48 @@
+.form {
+  box-sizing: border-box;
+  margin-top: em(30px);
+  padding: em(30px) 8%;
+  background-color: $color-decor-light;
+
+  &__title {
+    margin: 0 0 .5em;
+    font-size: em($font-size);
+    text-transform: uppercase;
+    color: $color-decor-main;
+  }
+
+  &__input {
+    display: block;
+    //box-sizing: border-box;
+    width: 100%;
+    height: em(45px);
+    margin: em(16px) 0 0;
+    padding: em(12px);
+    border: 1px solid $color-border;
+    outline: none;
+    &:focus {
+      border-color: darken($color-border, 20%);
+    }
+  }
+
+  &__area {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: em(110px);
+    margin: em(16px) 0 0;
+    padding: em(16px);
+    border: 1px solid $color-border;
+    resize: none;
+    outline: none;
+    &:focus {
+      border-color: darken($color-border, 20%);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: em(24px);
+    text-transform: uppercase;
+  }
+}

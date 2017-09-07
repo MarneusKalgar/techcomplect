@@ -1,1 +1,5 @@
 //= include('../../vendor/jquery/dist/jquery.min.js')
+//= include('../../vendor/matchHeight/dist/jquery.matchHeight-min.js')
+//= include('../../vendor/jquery.maskedinput/dist/jquery.maskedinput.min.js')
+//= include('../../vendor/slick-carousel/slick/slick.min.js')
+//= include('../../vendor/module.lazy-load-google-maps.js')

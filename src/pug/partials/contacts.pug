@@ -1,0 +1,26 @@
+section.contacts
+  ol.breadcrumb
+    li.breadcrumb-item: a(href="#") Главная
+    li.breadcrumb-item.active Контакты
+
+  .contacts__slider
+    .contacts__slide
+      .contacts__slide-col
+        h2.contacts__label Краны
+          br
+          |  латунные
+        a.btn.btn-primary.contacts__btn(href="#") Подробнее
+      .contacts__slide-col
+        img.contacts__img(src="img/slide-img.png", alt="image")
+
+  h2.section-title контакты
+  p.section-text Проконсультироваться и оформить заказ вы можете по контактным данным указаным ниже либо воспользуйтесь формой обратной связи. Контакт центр «Сантехкомплект» работает для Вас с 8:30 до 17:00 (с понедельника по пятницу)
+
+  .contacts__data
+    .row.no-margin
+      .col-md-8.no-margin
+        include ../partials/tabs
+      .col-md-4.no-margin
+        include ../partials/form
+    .row.no-margin
+      include ../partials/brands
