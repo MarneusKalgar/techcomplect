@@ -1,5 +1,5 @@
-@import "../vendor/mdi/scss/variables";
-@import "../vendor/mdi/scss/functions";
+//@import "../vendor/mdi/scss/variables";
+//@import "../vendor/mdi/scss/functions";
 
 @mixin opacity($opacity) {
   -ms-filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})");
@@ -7,20 +7,20 @@
   opacity: $opacity;
 }
 
-@mixin mdi {
-  font: {
-    family: "Material Design Icons";
-    weight: normal;
-    size: inherit;
-    style: normal;
-    variant: normal;
-  }
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
-}
+//@mixin mdi {
+//  font: {
+//    family: "Material Design Icons";
+//    weight: normal;
+//    size: inherit;
+//    style: normal;
+//    variant: normal;
+//  }
+//  line-height: 1;
+//  text-rendering: auto;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//  transform: translate(0, 0);
+//}
 
 @function pct($target, $context) {
   @if not unitless($target) {
