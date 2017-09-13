@@ -1,0 +1,46 @@
+.price-tile {
+  position: relative;
+  box-sizing: border-box;
+  min-height: em(300px);
+  margin-top: em(24px);
+  padding: em(40px) em(20px);
+  border: 1px solid $color-border;
+  cursor: pointer;
+  transition: all .3s ease;
+  &:hover {
+    border-color: $color-decor-main;
+  }
+
+  &__caption {
+    margin: 0 0 em(24px);
+    font-size: $font-size;
+  }
+
+  &__category {
+    display: inline-block;
+    padding: em(10px) em(20px);
+    font-size: $font-size * .75;
+    color: $color-decor-main;
+    text-transform: capitalize;
+    background-color: $color-decor-light;
+    border-radius: em(5px);
+  }
+
+  &__text {
+    font-size: $font-size * .875;
+  }
+
+  &__size {
+    position: absolute;
+    bottom: em(35px);
+    left: em(20px);
+    color: $color-text-light;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: em(35px);
+    right: em(20px);
+  }
+}
