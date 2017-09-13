@@ -88,12 +88,12 @@ const FILEINCLUDE_CONFIG = {
   indent: true
 };
 
-gulp.task('lint', () =>
-  gulp.src(PATH.watch.js.app)
-    .pipe($.eslint())
-    .pipe($.eslint.format())
-    .pipe($.if(!browserSync.active, $.eslint.failOnError()))
-);
+// gulp.task('lint', () =>
+//   gulp.src(PATH.watch.js.app)
+//     .pipe($.eslint())
+//     .pipe($.eslint.format())
+//     .pipe($.if(!browserSync.active, $.eslint.failOnError()))
+// );
 
 gulp.task('clean:build', () => del(PATH.clean, {dot: true}));
 gulp.task('clean:cache', cb => $.cache.clearAll(cb));
@@ -158,7 +158,7 @@ gulp.task('build:js:vendor', () => {
   .pipe(browserSync.stream());
 });
 
-gulp.task('build:js:app', ['lint'], () => {
+gulp.task('build:js:app', () => {
   gulp.src(PATH.src.js.app)
     .pipe($.plumber())
     .pipe($.fileInclude(FILEINCLUDE_CONFIG))
