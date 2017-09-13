@@ -1,3 +1,5 @@
+$block: 'price-tile';
+
 .price-tile {
   position: relative;
   box-sizing: border-box;
@@ -9,6 +11,16 @@
   transition: all .3s ease;
   &:hover {
     border-color: $color-decor-main;
+  }
+
+  &--common {
+    background-color: $color-decor-light;
+    .#{$block}__caption {
+      color: $color-decor-main;
+    }
+    .#{$block}__text {
+      color: $color-text;
+    }
   }
 
   &__caption {
@@ -30,6 +42,7 @@
 
   &__text {
     font-size: $font-size * .875;
+    color: #6a6a6a;
   }
 
   &__size {

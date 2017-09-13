@@ -1,3 +1,48 @@
 .price {
   margin-top: em(50px);
+
+  &__tabs {
+    margin-top: em(60px);
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $color-decor-main;
+  }
+
+  &__tabs-title {
+    display: inline-block;
+    margin: 0;
+    padding-left: em(20px);
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #00497c;
+  }
+
+  &__panel {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__tab {
+    padding: em(14px) em(20px);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease;
+    &.active {
+      color: $color-light;
+      background-color: $color-decor-main;
+    }
+  }
+
+  &__item {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
 }

@@ -11,32 +11,161 @@ section.price
   p.section-text Поэтому, для уточнения фактической цены, рекомендуем связаться с нами любым, удобным для Вас способом.
 
   .price__tabs
-    h3.price__tabs-title фильтр
-    ul.price__tabs
-      li.price__tab.active все
-      li.price__tab прайс-лист
-      li.price__tab каталог
-    .row
-      .col-sm-6.col-md-4
-        +price-tile({
-          "caption": "трубопроводная арматура",
-          "categ": "каталог",
-          "text": "каталог трубопроводной арматуры",
-          "size": "pdf 2mb"
-        })
-      .col-sm-6.col-md-4
-        +price-tile({
-          "caption": "отопительное оборудование",
-          "categ": "прайс-лист",
-          "text": "Котлы, радиаторы, бойлеры, колонки, тёплый пол",
-          "size": "pdf 1mb"
-        })
-      .col-sm-6.col-md-4
-        +price-tile({
-          "caption": "Трубы пластиковые и канализационные",
-          "categ": "прайс-лист",
-          "text": "Трубы и фитинги PPr, металлопластик, ПЭ, ПВХ, канализация.",
-          "size": "pdf 5mb"
-        })
+    .price__head
+      h3.price__tabs-title фильтр
+      ul.price__panel
+        li.price__tab.active все
+        li.price__tab прайс-лист
+        li.price__tab каталог
+    .price__item.active#item-all
+      .row
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "price-tile--common",
+            "caption": "трубопроводная арматура",
+            "categ": "",
+            "text": "Общий прайс-лист, с розничными ценами на весь ассортимент продукции.",
+            "size": "pdf 2mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "трубопроводная арматура",
+            "categ": "каталог",
+            "text": "каталог трубопроводной арматуры",
+            "size": "pdf 2mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "отопительное оборудование",
+            "categ": "прайс-лист",
+            "text": "Котлы, радиаторы, бойлеры, колонки, тёплый пол",
+            "size": "pdf 1mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "Трубы пластиковые и канализационные",
+            "categ": "прайс-лист",
+            "text": "Трубы и фитинги PPr, металлопластик, ПЭ, ПВХ, канализация.",
+            "size": "pdf 5mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "отопительное оборудование",
+            "categ": "прайс-лист",
+            "text": "Котлы, радиаторы, бойлеры, колонки, тёплый пол",
+            "size": "pdf 1mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "Трубы пластиковые и канализационные",
+            "categ": "прайс-лист",
+            "text": "Трубы и фитинги PPr, металлопластик, ПЭ, ПВХ, канализация.",
+            "size": "pdf 5mb"
+          })
+    .price__item#item-price
+      .row
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "трубопроводная арматура",
+            "categ": "каталог",
+            "text": "каталог трубопроводной арматуры",
+            "size": "pdf 2mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "отопительное оборудование",
+            "categ": "прайс-лист",
+            "text": "Котлы, радиаторы, бойлеры, колонки, тёплый пол",
+            "size": "pdf 1mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "Трубы пластиковые и канализационные",
+            "categ": "прайс-лист",
+            "text": "Трубы и фитинги PPr, металлопластик, ПЭ, ПВХ, канализация.",
+            "size": "pdf 5mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "отопительное оборудование",
+            "categ": "прайс-лист",
+            "text": "Котлы, радиаторы, бойлеры, колонки, тёплый пол",
+            "size": "pdf 1mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "Трубы пластиковые и канализационные",
+            "categ": "прайс-лист",
+            "text": "Трубы и фитинги PPr, металлопластик, ПЭ, ПВХ, канализация.",
+            "size": "pdf 5mb"
+          })
+    .price__item#item-catalog
+      .row
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "трубопроводная арматура",
+            "categ": "каталог",
+            "text": "каталог трубопроводной арматуры",
+            "size": "pdf 2mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "трубопроводная арматура",
+            "categ": "каталог",
+            "text": "каталог трубопроводной арматуры",
+            "size": "pdf 2mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "трубопроводная арматура",
+            "categ": "каталог",
+            "text": "каталог трубопроводной арматуры",
+            "size": "pdf 2mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "отопительное оборудование",
+            "categ": "прайс-лист",
+            "text": "Котлы, радиаторы, бойлеры, колонки, тёплый пол",
+            "size": "pdf 1mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "Трубы пластиковые и канализационные",
+            "categ": "прайс-лист",
+            "text": "Трубы и фитинги PPr, металлопластик, ПЭ, ПВХ, канализация.",
+            "size": "pdf 5mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "отопительное оборудование",
+            "categ": "прайс-лист",
+            "text": "Котлы, радиаторы, бойлеры, колонки, тёплый пол",
+            "size": "pdf 1mb"
+          })
+        .col-sm-6.col-md-4
+          +price-tile({
+            "class": "",
+            "caption": "Трубы пластиковые и канализационные",
+            "categ": "прайс-лист",
+            "text": "Трубы и фитинги PPr, металлопластик, ПЭ, ПВХ, канализация.",
+            "size": "pdf 5mb"
+          })
 
   //-include ../partials/brands

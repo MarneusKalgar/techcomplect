@@ -33,6 +33,18 @@ jQuery(function($) {
     });
   }
 
+  if ($('.price__tabs').length) {
+    let $priceTabs = $('.price__tabs');
+    let $priceBtn = $('.price__tab');
+    let $priceItem = $('.price__item');
+    $priceBtn.on('click', function() {
+      $(this).addClass('active')
+        .siblings().removeClass('active');
+      $(this).closest($priceTabs).find($priceItem.eq($(this).index())).addClass('active')
+        .siblings().removeClass('active');
+    });
+  }
+
   (function($, window, document) {
     var $window = $(window);
     var mapInstances = [];

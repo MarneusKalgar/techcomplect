@@ -2,6 +2,57 @@
   margin-top: 3.125em;
 }
 
+.price__tabs {
+  margin-top: 3.75em;
+}
+
+.price__head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 2px solid #335f96;
+}
+
+.price__tabs-title {
+  display: inline-block;
+  margin: 0;
+  padding-left: 1.25em;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #00497c;
+}
+
+.price__panel {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price__tab {
+  padding: 0.875em 1.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.price__tab.active {
+  color: #fff;
+  background-color: #335f96;
+}
+
+.price__item {
+  display: none;
+}
+
+.price__item.active {
+  display: block;
+}
+
 .price-tile {
   position: relative;
   box-sizing: border-box;
@@ -15,6 +66,18 @@
 
 .price-tile:hover {
   border-color: #335f96;
+}
+
+.price-tile--common {
+  background-color: #f7f8fa;
+}
+
+.price-tile--common .price-tile__caption {
+  color: #335f96;
+}
+
+.price-tile--common .price-tile__text {
+  color: #2f2f2f;
 }
 
 .price-tile__caption {
@@ -36,6 +99,7 @@
 
 .price-tile__text {
   font-size: 14px;
+  color: #6a6a6a;
 }
 
 .price-tile__size {
