@@ -12,8 +12,10 @@
   }
 
   &__caption {
+    min-height: 2em;
     margin: 0 0 em(24px);
     font-size: $font-size;
+    text-transform: uppercase;
   }
 
   &__category {
@@ -42,5 +44,18 @@
     position: absolute;
     bottom: em(35px);
     right: em(20px);
+    color: $color-decor-main;
+    text-decoration: underline;
+    &::before {
+      content: '';
+      @include position(absolute, .1em null null -1.2em);
+      @include size(em(15px) em(18px));
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzMzVmOTYiIHZpZXdCb3g9IjAgMCAzMzAgMzMwIj48cGF0aCBkPSJNMTkyIDEwOEgyOTEuMkwxOTIgOC44djQyLjQiLz48cGF0aCBkPSJNMzAgMTV2MzAwYzAgOC4yOCA2LjcyIDE1IDE1IDE1aDI0MGM4LjI4IDAgMTUtNi43MiAxNS0xNVYxMzhIMTc3Yy04LjMgMC0xNS02LjcyLTE1LTE1VjBINDVjLTguMjggMC0xNSA2LjcyLTE1IDE1em04NSAxNjVoMTAwYzguMjggMCAxNSA2LjcyIDE1IDE1cy02LjcyIDE1LTE1IDE1SDExNWMtOC4yOCAwLTE1LTYuNzItMTUtMTVzNi43Mi0xNSAxNS0xNXptMCA2MGgxMDBjOC4yOCAwIDE1IDYuNzIgMTUgMTUgMCA4LjI4LTYuNzIgMTUtMTUgMTVIMTE1Yy04LjI4IDAtMTUtNi43Mi0xNS0xNSAwLTguMjggNi43Mi0xNSAxNS0xNXoiLz48L3N2Zz4=") 0 0 no-repeat;
+      background-size: cover;
+    }
+    &:hover,
+    &:focus {
+      color: darken($color-decor-main, 10%);
+    }
   }
 }

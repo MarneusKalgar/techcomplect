@@ -51,7 +51,7 @@ const PATH = {
       vendor: 'src/js/vendor/vendor.js',
       app: 'src/js/app/application.js'
     },
-    styles: 'src/sass/application.scss',
+    styles: 'src/sass/*.scss',
     img: 'src/img/**/*',
     pic: 'src/pic/**/*',
     fonts: 'src/fonts/**/*',
