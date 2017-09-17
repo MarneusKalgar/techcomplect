@@ -7,25 +7,35 @@
 
   &__head {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     border-bottom: 2px solid $color-decor-main;
+    @include minW(500px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__tabs-title {
     display: inline-block;
     margin: 0;
-    padding-left: em(20px);
+    padding: 0;
     font-size: 1em;
     text-transform: uppercase;
     color: #00497c;
+    @include minW(500px) {
+      padding-left: em(20px);
+    }
   }
 
   &__panel {
-    margin: 0;
+    margin: em(20px) 0 0;
     padding: 0;
     list-style-type: none;
     display: flex;
+    @include minW(500px) {
+      margin: 0;
+    }
   }
 
   &__tab {

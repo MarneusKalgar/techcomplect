@@ -4,8 +4,8 @@ $block: 'price-tile';
   position: relative;
   box-sizing: border-box;
   min-height: em(300px);
-  margin-top: em(24px);
-  padding: em(40px) em(20px);
+  margin-top: em(30px);
+  padding: em(40px) em(20px) em(60px);
   border: 1px solid $color-border;
   cursor: pointer;
   transition: all .3s ease;
@@ -54,6 +54,7 @@ $block: 'price-tile';
   }
 
   &__link {
+    display: block;
     position: absolute;
     bottom: em(35px);
     right: em(20px);

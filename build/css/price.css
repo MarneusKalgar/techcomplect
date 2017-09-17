@@ -9,28 +9,49 @@
 .price__head {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   border-bottom: 2px solid #335f96;
+}
+
+@media screen and (min-width: 500px) {
+  .price__head {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+  }
 }
 
 .price__tabs-title {
   display: inline-block;
   margin: 0;
-  padding-left: 1.25em;
+  padding: 0;
   font-size: 1em;
   text-transform: uppercase;
   color: #00497c;
 }
 
+@media screen and (min-width: 500px) {
+  .price__tabs-title {
+    padding-left: 1.25em;
+  }
+}
+
 .price__panel {
-  margin: 0;
+  margin: 1.25em 0 0;
   padding: 0;
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 500px) {
+  .price__panel {
+    margin: 0;
+  }
 }
 
 .price__tab {
@@ -57,8 +78,8 @@
   position: relative;
   box-sizing: border-box;
   min-height: 18.75em;
-  margin-top: 1.5em;
-  padding: 2.5em 1.25em;
+  margin-top: 1.875em;
+  padding: 2.5em 1.25em 3.75em;
   border: 1px solid #eee;
   cursor: pointer;
   transition: all .3s ease;
@@ -111,6 +132,7 @@
 }
 
 .price-tile__link {
+  display: block;
   position: absolute;
   bottom: 2.1875em;
   right: 1.25em;

@@ -10,7 +10,13 @@ jQuery(function($) {
       .siblings().removeClass('active');
   });
 
-  $('.tabs, .form').matchHeight();
+  if ($('.tabs').length) {
+    $('.tabs, .form').matchHeight();
+  }
+
+  if ($('.price-tile').length) {
+    $('.price-tile').matchHeight();
+  }
 
   $(":input[type='tel']").mask('+380 (99) 999 - 99 - 99');
 

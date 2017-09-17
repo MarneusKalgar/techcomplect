@@ -76,7 +76,7 @@ const BROWSERSYNC_CONFIG = {
   server: ["build"],
   notify: false,
   open: false,
-  tunnel: false,
+  tunnel: "markup",
   host: "markup",
   port: 9000,
   logPrefix: "browserSync"
